@@ -1,0 +1,19 @@
+to setup server we need to :
+    1- npm i axios cookie-parser cors dotenv express express-validator jsonwebtoken moongoose nodemon
+    2- add these lines to package.json file 
+        "name" : "mern_stack_movie_2022",
+        "type": "module",
+        "version" : "0.0.1",
+        "author": "zakaria zejly",
+        "main": "index.js",
+        "license": "MIT",
+        "scripts": {
+            "start" : "nodemon index.js"
+        },
+    3- create an .env file and add these lines
+        MONGODB_URL= mongodb://localhost:27017/
+        PORT=5000
+        TOKEN_SECRET_KEY=
+        TMDB_BASE_URL=https://api.themoviedb.org/3/
+        TMDB_KEY=4d173b8ea31d76212a176dfd93996c60
+    4- create an index.js file and setup backend
